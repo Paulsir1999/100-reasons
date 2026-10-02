@@ -3,218 +3,230 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>100 Little Reasons ❤️</title>
+<meta name="theme-color" content="#7c5cff">
+<title>Isha (The Perfectionist) — 100 Compliments</title>
 <style>
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Georgia, "Times New Roman", serif;
-    background:
-      radial-gradient(circle at 20% 20%, rgba(255,255,255,.22), transparent 28%),
-      radial-gradient(circle at 80% 80%, rgba(255,255,255,.18), transparent 30%),
-      linear-gradient(135deg, #ff758c, #ff7eb3, #c471ed);
-    color: #5b1734;
-    overflow: hidden;
-  }
-
-  .hearts span {
-    position: fixed;
-    bottom: -30px;
-    font-size: 22px;
-    opacity: .55;
-    animation: float 9s linear infinite;
-    pointer-events: none;
-  }
-  .hearts span:nth-child(1){left:8%;animation-delay:0s}
-  .hearts span:nth-child(2){left:23%;animation-delay:2s}
-  .hearts span:nth-child(3){left:41%;animation-delay:5s}
-  .hearts span:nth-child(4){left:63%;animation-delay:1s}
-  .hearts span:nth-child(5){left:82%;animation-delay:4s}
-
-  @keyframes float {
-    0% { transform: translateY(0) rotate(0); opacity: 0; }
-    15% { opacity: .55; }
-    100% { transform: translateY(-115vh) rotate(35deg); opacity: 0; }
-  }
-
-  .card {
-    width: min(92vw, 650px);
-    padding: 42px 30px 34px;
-    text-align: center;
-    background: rgba(255,255,255,.88);
-    backdrop-filter: blur(14px);
-    border: 1px solid rgba(255,255,255,.7);
-    border-radius: 28px;
-    box-shadow: 0 25px 70px rgba(91, 23, 52, .25);
-    position: relative;
-    z-index: 2;
-  }
-
-  .tiny { font-size: 13px; letter-spacing: 3px; text-transform: uppercase; opacity: .65; }
-  h1 { margin: 10px 0 8px; font-size: clamp(34px, 7vw, 58px); }
-  .subtitle { margin: 0 auto 28px; font-size: 17px; opacity: .72; max-width: 470px; line-height: 1.5; }
-
-  #compliment {
-    min-height: 135px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    font-size: clamp(24px, 5vw, 38px);
-    line-height: 1.25;
-    font-weight: bold;
-    transition: opacity .18s ease, transform .18s ease;
-  }
-
-  .show {
-    animation: pop .35s ease;
-  }
-  @keyframes pop {
-    0% { opacity: 0; transform: translateY(10px) scale(.98); }
-    100% { opacity: 1; transform: translateY(0) scale(1); }
-  }
-
-  button {
-    border: 0;
-    padding: 16px 30px;
-    border-radius: 999px;
-    background: #e83e6f;
-    color: white;
-    font-size: 17px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 10px 24px rgba(232,62,111,.3);
-    transition: transform .15s ease, box-shadow .15s ease;
-  }
-  button:hover { transform: translateY(-2px) scale(1.02); box-shadow: 0 14px 30px rgba(232,62,111,.38); }
-  button:active { transform: scale(.97); }
-
-  .counter { margin-top: 16px; font-size: 13px; opacity: .55; }
-  .footer { margin-top: 20px; font-size: 13px; opacity: .55; }
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 22px;
+  font-family: Georgia, "Times New Roman", serif;
+  background:
+    radial-gradient(circle at 15% 15%, rgba(255,255,255,.35), transparent 28%),
+    radial-gradient(circle at 85% 85%, rgba(255,255,255,.22), transparent 30%),
+    linear-gradient(135deg, #6a5acd, #8b72e8, #b18cff);
+  color: #282044;
+  overflow: hidden;
+}
+.floaters span {
+  position: fixed;
+  bottom: -30px;
+  font-size: 22px;
+  opacity: .35;
+  animation: float 9s linear infinite;
+  pointer-events: none;
+}
+.floaters span:nth-child(1) { left: 8%; animation-delay: 0s; }
+.floaters span:nth-child(2) { left: 28%; animation-delay: 2s; }
+.floaters span:nth-child(3) { left: 50%; animation-delay: 4s; }
+.floaters span:nth-child(4) { left: 72%; animation-delay: 1s; }
+.floaters span:nth-child(5) { left: 90%; animation-delay: 5s; }
+@keyframes float {
+  0% { transform: translateY(0) rotate(0); opacity: 0; }
+  15% { opacity: .35; }
+  100% { transform: translateY(-115vh) rotate(30deg); opacity: 0; }
+}
+.card {
+  width: min(92vw, 680px);
+  padding: 42px 30px 32px;
+  text-align: center;
+  background: rgba(255,255,255,.90);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,.75);
+  border-radius: 30px;
+  box-shadow: 0 25px 70px rgba(38,25,90,.28);
+  position: relative;
+  z-index: 2;
+}
+.tag {
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  opacity: .58;
+}
+h1 {
+  margin: 12px 0 8px;
+  font-size: clamp(34px, 7vw, 58px);
+  line-height: 1.05;
+}
+.subtitle {
+  margin: 0 auto 24px;
+  font-size: clamp(17px, 3vw, 21px);
+  line-height: 1.5;
+  opacity: .75;
+}
+#compliment {
+  min-height: 155px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-size: clamp(23px, 4.8vw, 36px);
+  line-height: 1.3;
+  font-weight: bold;
+}
+.show { animation: pop .32s ease; }
+@keyframes pop {
+  0% { opacity: 0; transform: translateY(9px) scale(.98); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+button {
+  border: 0;
+  padding: 16px 30px;
+  border-radius: 999px;
+  background: #6752d6;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(103,82,214,.3);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+button:hover { transform: translateY(-2px); box-shadow: 0 14px 30px rgba(103,82,214,.4); }
+button:active { transform: scale(.97); }
+.counter {
+  margin-top: 15px;
+  font-size: 13px;
+  opacity: .52;
+}
+.footer {
+  margin-top: 18px;
+  font-size: 13px;
+  opacity: .5;
+}
 </style>
 </head>
 <body>
-<div class="hearts"><span>♥</span><span>♡</span><span>♥</span><span>♡</span><span>♥</span></div>
+<div class="floaters"><span>✦</span><span>✧</span><span>✦</span><span>✧</span><span>✦</span></div>
 
 <main class="card">
-  <div class="tiny">A little something for you</div>
-  <h1>100 reasons you're amazing ❤️</h1>
-  <p class="subtitle">Tap the button. I have a hundred things I could say about you… and honestly, I could keep going.</p>
+  <div class="tag">A little something for a great friend</div>
+  <h1>Hey Isha,<br><span style="font-size:.68em;">the perfectionist ✨</span></h1>
+  <p class="subtitle">Here is something for you..</p>
 
-  <div id="compliment">Tap the button, beautiful ✨</div>
+  <div id="compliment">Tap the button and discover your first compliment.</div>
 
-  <button id="next">Give me a compliment 💕</button>
+  <button id="next">Give me a compliment ✨</button>
   <div class="counter" id="counter">0 / 100 discovered</div>
-  <div class="footer">Made with a suspicious amount of love.</div>
+  <div class="footer">100 compliments. Zero romance. Just facts. 😄</div>
 </main>
 
 <script>
 const compliments = [
-"You have the kind of smile that can completely change my mood.",
-"You're somehow beautiful even when you're doing absolutely nothing.",
-"Your eyes are genuinely one of my favorite places to get lost.",
-"You make ordinary moments feel like memories worth keeping.",
-"Your laugh is ridiculously adorable.",
-"You have this effortless charm that I can't explain.",
-"You make my heart do stupid little things.",
-"You're even prettier when you're genuinely happy.",
-"I love the way your face lights up when you talk about something you love.",
-"You have a way of making me feel at home.",
-"You're the kind of person people remember.",
-"Your voice could make even the longest day feel better.",
-"You look beautiful from every angle, and yes, I've checked.",
-"You're dangerously cute when you're being shy.",
-"Talking to you is one of my favorite parts of the day.",
-"You have the prettiest energy.",
-"You make me smile at my phone like an idiot.",
-"You're somehow both adorable and incredibly attractive.",
-"I could listen to you talk for hours.",
-"Your presence makes everything feel a little softer.",
-"You have a heart that's as beautiful as your face.",
-"You're the first person I'd want to tell good news to.",
-"Even your little habits are cute to me.",
-"You make being around you feel effortless.",
-"You're ridiculously easy to adore.",
-"Your confidence is incredibly attractive.",
-"You have a smile I could recognize anywhere.",
-"You make me want to be a better version of myself.",
-"You're one of those rare people who makes life feel brighter.",
-"You're beautiful without even trying.",
-"You're cute when you're excited, and it's impossible not to notice.",
-"You have the sweetest way of caring about people.",
-"You're my favorite notification.",
-"Somehow, you make my day better just by existing in it.",
-"You're prettier than you realize.",
-"Your eyes deserve their own love story.",
-"I love how comfortable I feel around you.",
-"You have a personality that's impossible not to fall for.",
-"You're the kind of beautiful that gets better the more I know you.",
-"Your happiness is genuinely contagious.",
-"You're adorable when you're pretending not to blush.",
-"I love your little expressions.",
-"You make even boring conversations fun.",
-"You're incredibly special to me.",
-"Your kindness makes you even more attractive.",
-"You're the person I want beside me for the little things.",
-"You make my world feel less ordinary.",
-"You're ridiculously good at being you.",
-"I love how your mind works.",
-"You're beautiful in a way that pictures never quite capture.",
-"Your laugh should honestly be illegal because it distracts me.",
-"You have a warmth that people naturally gravitate toward.",
-"You're one of my favorite reasons to smile.",
-"You make my heart feel ridiculously lucky.",
-"You're cute when you're annoyed, although I may never admit that to you.",
-"You're the perfect mix of sweet and mischievous.",
-"You're more captivating than you know.",
-"I could look at you for way longer than I should.",
-"You're the kind of person I never get tired of.",
-"You make silence feel comfortable.",
-"You're gorgeous when you're dressed up, but somehow even cuter in your normal clothes.",
-"You're my favorite kind of distraction.",
-"Your little smile after you realize you're being complimented is adorable.",
-"You make every conversation feel worth having.",
-"You're beautiful on the inside in ways that show on the outside.",
-"You're one of the easiest people to miss.",
-"I love the way you care so deeply.",
-"You're more precious to me than you probably realize.",
-"Your eyes have a way of saying everything without words.",
-"You make me feel incredibly lucky.",
-"You're the kind of girl songs are written about.",
-"You're effortlessly magnetic.",
-"Your smile has unfair levels of power.",
-"You're cute enough to ruin my concentration.",
-"I love hearing you talk about your dreams.",
-"You make me want to collect little moments with you.",
-"You're somehow elegant and adorable at the same time.",
-"You're my favorite person to annoy and adore.",
-"You have a beauty that doesn't need a filter.",
-"You're the kind of person I'd choose again and again.",
-"You make my bad days feel less bad.",
-"You're gorgeous when you're confident, and adorable when you're shy.",
-"You're the reason I sometimes catch myself smiling for no reason.",
-"Your happiness matters to me more than you know.",
-"You're beautiful in all the tiny details.",
-"I love the way you make me feel understood.",
-"You're genuinely one of a kind.",
-"You have the cutest way of reacting when you're surprised.",
-"You're a walking reminder that life can be beautiful.",
-"I could probably write another hundred compliments about you.",
-"You're somehow my peace and my favorite chaos.",
-"You're incredibly easy to love.",
-"You make my world more colorful.",
-"You're the kind of beautiful that stays in my head.",
-"I love being able to call you mine.",
-"You're stunning, but it's your personality that keeps me falling.",
-"You're my favorite face to see.",
-"Even on your worst hair day, you're still gorgeous to me.",
-"You make my heart feel ridiculously full.",
-"If I had to choose my favorite person again, I'd still choose you.",
-"And finally: you're you — and that's more than enough for me. ❤️"
+    'You have an incredible eye for detail.',
+    'Your perfectionist side actually makes you notice things everyone else misses.',
+    'You have a really thoughtful way of looking at things.',
+    'You make conversations genuinely interesting.',
+    'You have a great sense of humor.',
+    "You're surprisingly good at making people feel comfortable.",
+    'You have a personality that is hard to forget.',
+    'You bring a lot of positive energy wherever you go.',
+    "You're the kind of friend people can actually count on.",
+    'You have a very sharp mind.',
+    'You notice the little things, and that is a rare quality.',
+    'You have excellent taste.',
+    "You're naturally curious, and it makes talking to you fun.",
+    'You have a way of making ordinary moments memorable.',
+    "You're much more observant than you let on.",
+    'You have a wonderfully expressive face.',
+    'Your reactions are honestly hilarious sometimes.',
+    'You know how to keep a conversation going.',
+    'You have a great balance of confidence and humility.',
+    "You're genuinely easy to talk to.",
+    "You have a strong sense of what you like and what you don't.",
+    "You don't just listen; you actually pay attention.",
+    'You have a very distinctive personality.',
+    "You're good at seeing both the big picture and the tiny details.",
+    'Your standards are high, and you usually have a reason for them.',
+    'You have a talent for making people laugh without trying too hard.',
+    "You're one of those people who can make a boring day more entertaining.",
+    'You have a wonderfully unpredictable sense of humor.',
+    'You ask surprisingly good questions.',
+    "You're good at remembering little details about people.",
+    'You have a strong presence without needing to be the loudest person in the room.',
+    "You're genuinely interesting to get to know.",
+    'You have a very creative way of thinking.',
+    'You can turn even a simple story into something entertaining.',
+    "You're refreshingly honest.",
+    'You have a good instinct for when someone needs a little encouragement.',
+    "You're better at understanding people than you probably realize.",
+    'You have a very recognizable laugh.',
+    'Your enthusiasm is contagious when you care about something.',
+    'You have a great ability to stay focused when you want something done.',
+    "You're the kind of person who actually notices quality.",
+    'You have a strong sense of individuality.',
+    "You're fun to tease because your reactions are priceless.",
+    'You have a talent for making small details feel important.',
+    'You bring your own personality into everything you do.',
+    "You're quietly impressive.",
+    'You have a surprisingly good memory.',
+    "You can be wonderfully stubborn when you believe you're right.",
+    "You're very good at spotting when something isn't quite right.",
+    "You have a natural ability to make people curious about what you're thinking.",
+    'You have a great combination of seriousness and silliness.',
+    "You're not afraid to have your own opinion.",
+    'You have a way of making people feel heard.',
+    "You're more capable than you give yourself credit for.",
+    'You have a great sense of timing when you tell a joke.',
+    "You're genuinely fun to be around.",
+    'You have a very distinct style of expressing yourself.',
+    'You make even your complaints entertaining.',
+    "You're surprisingly good at giving useful advice.",
+    'You have a talent for turning random conversations into memorable ones.',
+    'You care about doing things properly, and it shows.',
+    "You're someone whose opinion actually makes people think.",
+    "You have a very strong attention span for things you're interested in.",
+    "You're good at noticing patterns other people overlook.",
+    'You have a natural curiosity that keeps things interesting.',
+    "You're very good at making a point without making a huge speech.",
+    'You have a wonderfully expressive way of texting.',
+    "You're the kind of person who can make an inside joke last forever.",
+    'You have a great ability to laugh at yourself.',
+    "You're not easily impressed, which makes your genuine appreciation meaningful.",
+    'You have a strong sense of personal standards.',
+    "You're good at finding the funny side of awkward situations.",
+    'You have a very memorable way of saying things.',
+    "You're the kind of friend who makes random plans more fun.",
+    'You have a surprisingly competitive side.',
+    "You're good at keeping people on their toes.",
+    'You have a natural ability to make people curious about you.',
+    "You're thoughtful in ways that aren't always obvious.",
+    'You have a great sense of when to be serious and when to be ridiculous.',
+    "You're very good at catching tiny mistakes.",
+    'You make perfectionism look like a personality trait.',
+    'You have a way of turning simple observations into clever comments.',
+    "You're genuinely dependable when it matters.",
+    'You have a strong ability to stay true to yourself.',
+    "You're good at making people feel included.",
+    'You have a personality that gets more interesting the more someone knows you.',
+    "You're surprisingly resourceful.",
+    'You have a great instinct for good ideas.',
+    "You're very good at remembering the details that matter.",
+    'You have a unique way of looking at everyday situations.',
+    "You're someone who can make a quick conversation last an hour.",
+    "You have a great sense of humor about life's little disasters.",
+    "You're not afraid to correct something when you know it can be better.",
+    'You have a rare combination of attention to detail and creativity.',
+    "You're genuinely one of the more interesting people to have a conversation with.",
+    'You have a way of making your opinions sound unmistakably like you.',
+    "You're a pretty great friend, perfectionist tendencies included.",
+    "And finally: Isha, you're simply a wonderfully memorable person to have as a friend.",
+    "You have a talent for making even the smallest stories entertaining.",
+    "Your perfectionist standards aside, you're genuinely a lot of fun to have around."
 ];
 
 let remaining = [...compliments];
@@ -228,25 +240,19 @@ button.addEventListener("click", () => {
   if (remaining.length === 0) {
     remaining = [...compliments];
     shown = 0;
-    box.textContent = "You finished all 100… so here's a bonus: I still have a million more things I love about you. ❤️";
-    counter.textContent = "100 / 100 discovered — tap again for a new round";
-    box.classList.remove("show");
-    void box.offsetWidth;
-    box.classList.add("show");
-    return;
+    box.textContent = "You finished all 100. The perfectionist has officially completed the assignment. 😄";
+    counter.textContent = "100 / 100 discovered — tap again for another round";
+  } else {
+    const index = Math.floor(Math.random() * remaining.length);
+    box.textContent = remaining.splice(index, 1)[0];
+    shown++;
+    counter.textContent = `${shown} / 100 discovered`;
   }
-
-  const index = Math.floor(Math.random() * remaining.length);
-  const compliment = remaining.splice(index, 1)[0];
-  shown++;
 
   box.classList.remove("show");
   void box.offsetWidth;
-  box.textContent = compliment;
   box.classList.add("show");
-
-  counter.textContent = `${shown} / 100 discovered`;
-  button.textContent = shown === 100 ? "Start another round 💗" : "Another one 💕";
+  button.textContent = shown >= 100 ? "Start again ✨" : "Another one ✨";
 });
 </script>
 </body>
